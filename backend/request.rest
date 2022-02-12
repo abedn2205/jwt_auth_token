@@ -1,0 +1,36 @@
+GET http://localhost:5000/products
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsIm5hbWUiOiJhYmVkbmVnbyIsImVtYWlsIjoiYWJlZG5lZ29fb21wdXN1bmdndUB5YWhvby5jb20iLCJpYXQiOjE2NDQ1OTQyNTgsImV4cCI6MTY0NDU5NDI3OH0.b78-5DamI2MGPD8KScenfesN9YxO3G1l1KrKzf7LH9E 
+
+###
+POST http://localhost:5000/products
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsIm5hbWUiOiJhYmVkbmVnbyIsImVtYWlsIjoiYWJlZG5lZ29fb21wdXN1bmdndUB5YWhvby5jb20iLCJpYXQiOjE2NDQ1OTY5NDQsImV4cCI6MTY0NDU5Njk2NH0.J78dNHF1-t9TlDQgYJPFlQcy5ikTnPCJ3EgegzvGIoI
+Content-Type: application/json
+
+{
+    "title": "Nike Air",
+    "price": 1300
+}
+
+###
+GET http://localhost:5000/products/1
+
+###
+PATCH http://localhost:5000/products/1
+Content-Type: application/json
+
+{
+    "title": "Adidas Running",
+    "price": 3300
+}
+
+###
+DELETE  http://localhost:5000/products/1
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "abednego_ompusunggu@yahoo.com",
+    "password": "123456"
+}
